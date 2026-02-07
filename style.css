@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+header {
+  margin: 24px;
+}
+
+.firstview {
+  display: flex;
+  margin: 24px;
+  height: 800px;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.firstview-left {
+  display: flex;
+  height: 100%;
+}
+
+.side-parentheses-left {
+  width: 10px;
+  height: 100%;
+  border-top: 1px solid #333;
+  border-left: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.firstview-left-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 16px;
+  margin-top: 16px;
+
+  justify-content: space-between;
+}
+
+.progress-bar-container {
+  width: 40%;
+  height: 5px;
+
+  border: 1px solid #333;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+
+  background-color: #000000;
+  animation: 6s linear 0s infinite progress;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  margin: 16px 0;
+}
+
+nav a {
+  font-size: 64px;
+}
+
+.firstview-right {
+  display: flex;
+  height: 100%;
+  width: 800px;
+}
+
+.nitorin-img-box {
+  width: 100%;
+}
+
+.side-parentheses-right {
+  width: 10px;
+  height: 100%;
+  border-top: 1px solid #333;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
