@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid cyan; */
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+#contents {
+  display: flex;
+  height: 100vh;
+}
+
+.container--left,
+.container--center {
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 16px;
+}
+
+.container--right {
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 3;
+  padding: 16px;
+  flex-direction: column;
+}
+
+#about,
+#like,
+#works {
+  flex-grow: 1;
+}
+
+.invisible {
+  display: none;
+}
+
+.profile-content {
+  display: flex;
+}
+
+.profile-sns-links {
+  display: flex;
+}
