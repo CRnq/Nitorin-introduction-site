@@ -27,7 +27,14 @@
                             <p>&nbsp;</p>
                             <p>function draw() {</p>
                             <p>&nbsp;&nbsp;&nbsp;background(255);</p>
-                            <p></p>
+                            <p class="nitorin-animate-code">&nbsp;</p>
+                            <p class="nitorin-animate-code">&nbsp;&nbsp;&nbsp;animate(("nitorinImg") => {</p>
+                            <p class="nitorin-animate-code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position: [width * 4 / 5, height / 2],</p>
+                            <p class="nitorin-animate-code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;draw: "0 1",</p>
+                            <p class="nitorin-animate-code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ease: inout(3),</p>
+                            <p class="nitorin-animate-code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;duration: 5000,</p>
+                            <p class="nitorin-animate-code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loop: true</p>
+                            <p class="nitorin-animate-code">&nbsp;&nbsp;&nbsp;});</p>
                             <p>}</p>
                         </div>
                     </div>
@@ -92,7 +99,7 @@
         </div>
     </section>
 
-    <script type="module" src="./lib/js/main.js"></script>
+    <script type="module" src="./lib/js/svg-animation.js"></script>
     <script src="./lib/js/text-animation.js"></script>
 </body>
 </html>
