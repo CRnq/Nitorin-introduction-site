@@ -17,20 +17,19 @@ ul li {
 #contents {
   display: flex;
   height: 100vh;
+  padding: 16px;
 }
 
 .container--left,
 .container--center {
   flex-basis: 0;
   flex-grow: 1;
-  padding: 16px;
 }
 
 .container--right {
   display: flex;
   flex-basis: 0;
   flex-grow: 3;
-  padding: 16px;
   flex-direction: column;
 }
 
