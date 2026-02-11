@@ -7,7 +7,7 @@
 
 a {
   text-decoration: none;
-  color: #333;
+  color: #111111;
 }
 
 ul li {
@@ -18,6 +18,8 @@ ul li {
   display: flex;
   height: 100vh;
   padding: 16px;
+
+  background-color: #fafafa;
 }
 
 .container--left,
@@ -40,7 +42,7 @@ ul li {
 }
 
 .invisible {
-  display: none;
+  display: none !important;
 }
 
 .profile-content {
@@ -49,4 +51,165 @@ ul li {
 
 .profile-sns-links {
   display: flex;
+}
+
+.container--left {
+  padding: 32px 24px;
+
+  border-right: 1px solid #e5e5e5;
+}
+
+.container--left h1 a {
+  font-size: 28px;
+  letter-spacing: 0.1em;
+}
+
+.container--left nav {
+  margin-top: 24px;
+}
+
+.container--left nav ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.container--left nav a {
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.container--left nav a:hover {
+  opacity: 1;
+}
+
+.container--center {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  border-right: 1px solid #e5e5e5;
+}
+
+.like,
+.works {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 24px 0;
+  row-gap: 64px;
+}
+
+.content {
+  padding: 12px 18px;
+  border: 1px solid #e5e5e5;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  transition: all 0.2s ease;
+}
+
+.content:hover {
+  background: #111111;
+  color: #e5e5e5;
+  border-color: #111111;
+}
+
+.container--right {
+  padding: 32px 40px;
+}
+
+.container--right h1 {
+  font-size: 42px;
+  letter-spacing: 0.1em;
+}
+
+.container--right h2 {
+  font-size: 18px;
+  margin-top: 24px;
+  letter-spacing: 0.1em;
+}
+
+.container--right h3 {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-top: 8px;
+}
+
+.container--right p {
+  line-height: 1.8;
+  font-size: 14px;
+  max-width: 600px;
+}
+
+.profile-content {
+  gap: 24px;
+  margin-top: 12px;
+}
+
+.profile-sns-links {
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.sns-icon {
+  padding: 8px 12px;
+  border: 1px solid #e5e5e5;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sns-icon:hover {
+  background: #111111;
+  border-color: #111111;
+}
+
+.sns-icon:hover a {
+  color: #e5e5e5;
+}
+
+.works-container h1 span {
+  font-size: 20px;
+}
+
+.works-container p {
+  margin-top: 24px;
+}
+
+.works-container img {
+  margin-top: 16px;
+  max-width: 100%;
+}
+
+.youtube-link a {
+  padding: 8px;
+
+  background-color: #111111;
+  color: #fafafa;
+}
+
+@media (max-width: 786px) {
+  #contents {
+    flex-direction: column;
+  }
+  .container--left {
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .container--left nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .container--center {
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5;
+    align-items: center;
+  }
+  .like,
+  .works {
+    flex-direction: row;
+    margin: 16px 0;
+    column-gap: 64px;
+  }
 }
